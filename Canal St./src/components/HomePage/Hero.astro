@@ -1,5 +1,5 @@
 ---
-
+import heroImg from '../../assets/images/hero.jpg'
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -9,10 +9,37 @@
     <title>Document</title>
 </head>
 <body>
+    <section>
+        <div class="hero-text">
+            <h1>Canal Street Market is carefully curated retail market, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores nesciunt dolore mollitia corrupti perspiciatis eligendi eos voluptas voluptate facilis, rerum laborum ullam sed earum repellendus sint numquam neque in recusandae?</h1>
+        </div>
+
+    <picture class="main-picture">
+        <source 
+            media="min-width: 601px" 
+            srcset="../../assets/images/hero.jpg"
+        />
+        <img 
+            src={heroImg.src} 
+            alt="heroimg"
+            width="2500"
+            height="1667"
+        />
+    </picture>
+
+
+    </section>
     
 </body>
 </html>
 
 <style>
+h1{
+    /* font: sans-serif; */
+}
+
+.main-picture{
     
+}
+
 </style>
